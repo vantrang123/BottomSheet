@@ -55,7 +55,7 @@ public class ShareRecyclerViewAdapter extends RecyclerView.Adapter<ShareRecycler
                 AppBean appBean = list.get(position);
                 shareIntent.setComponent(new ComponentName(appBean.pkgName, appBean.appLauncherClassName));
                 shareIntent.setType("text/plain");
-                shareIntent.putExtra(Intent.EXTRA_TEXT, "分享内容");
+                shareIntent.putExtra(Intent.EXTRA_TEXT, "Chia sẻ nội dung");
                 shareIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 activity.startActivity(shareIntent);
                 if (dialog != null) {
