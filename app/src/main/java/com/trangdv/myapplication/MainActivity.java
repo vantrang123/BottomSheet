@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.btn_show_BottomSheetDialog1:
-                initBottomSheetDialog1();
+//                initBottomSheetDialog1();
                 break;
             case R.id.btn_show_BottomSheetDialog2:
                 initBottomSheetDialog2();
@@ -148,6 +148,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bottomSheetDialog.show();
     }
 
+/*
     private void initBottomSheetDialog1() {
         final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this);
         View inflate = View.inflate(this, R.layout.bottom_sheet_dialog_fragment, null);
@@ -175,6 +176,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bottomSheetDialog.setContentView(inflate);
         bottomSheetDialog.show();
     }
+*/
 
     @Override
     public void onBackPressed() {
